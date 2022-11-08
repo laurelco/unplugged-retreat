@@ -87,6 +87,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .content-wrapper {
+  width: 90%;
+  margin: 50 px 0;
+}
+
+
 /* ------------------- Base Header - Footer Styles ---------------------*/
 
 header, 
@@ -97,12 +103,11 @@ footer {
   flex-flow: row wrap;
 }
 
- /* Header styles */
-
- header {
+header {
   padding: 15px 0;
+}
 
- }
+ 
 
  header .content-wrapper {
   display: flex;
@@ -113,37 +118,36 @@ footer {
 
  }
 
- header figure {
-
+ .header-divider {
+  width: 100;
+  height: 1px;
+  margin: 10 px 0 20px 0;
  }
-
-.header-divider {
-  width: 90%;
-
-}
 
  header nav {
   display: flex;
   justify-content: space-around;
-  align-items: space-around;
+  align-items: center;
   flex-flow: row wrap;
   width: 60%;
  }
+
 
  header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
- 
-  
  }
 
 
-/* Footer Styles */
-
 footer {
-
+  flex-direction: column;
 }
+
+footer p {
+  margin: 0;
+}
+
 
 footer .content-wrapper {
   width: 55%;
@@ -151,20 +155,8 @@ footer .content-wrapper {
 
 }
 
-.footer-content {
-
-}
-
-.footer .contact {
-
-}
-
-address {
-
-}
-
-footer .social {
-
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -174,49 +166,25 @@ footer .social-icons {
 
 }
 
-footer .social p {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer h3 {
-
-}
-
-footer p {
-  margin: 0;
-
+footer .copyright {
+  margin: 20px 0;
 }
 
 
-/****** content-wrapper needs a percentage - perhaps I don't need class names in my content-wrapper CSS?  */
 /* ------------------- Mobile Styles - Homepage ---------------------*/
+
+/* Hero area */
 
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
-
-}
-
-.hero-area .content-wrapper {
-
-}
-
-.hero-area figure {
-
-}
-
-.hero-area h1 {
-
-}
-
-main h2 {
-
-}
-
-main p { 
+ flex-flow: row wrap;
 
 }
 
@@ -231,17 +199,10 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .form-description {
-
-}
-
-aside .form {
-
-}
 
 /* Features */
 
-/*****  features article needs a width... but where is features article?? features-item? fontawesome-icons??? */
+
 .features {
   display: flex;
   justify-content: center;
@@ -249,23 +210,21 @@ aside .form {
 
 }
 
-.features .content-wrapper {
 
+.features h2 {
+  margin-bottom: 60 px;
 }
 
-.features-items {
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.featues .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.fontawesome-icon {
-
-}
-
-.features-item-description {
-
 }
 
 .features p {
@@ -282,18 +241,14 @@ aside .form {
   flex-flow: row wrap;
 }
 
-.reviews .content-wrapper {
-
-}
-
-.reviews .article {
-
+.reviews h2 {
+  margin-bottom: 40 px;
 }
 
 .reviews h3 {
-  width: 
+  width: 55%;
+  margin: 20 px 0;
 }
-
 
 /* ------------------- Mobile Styles - About Page ---------------------*/
 
@@ -305,21 +260,6 @@ aside .form {
 
 }
 
-.mission .content-wrapper {
-
-}
-
-.mission-content {
-
-}
-
-.map {
-
-}
-
-.map figure {
-
-}
 
 .contact-section {
   display: flex;
@@ -328,20 +268,8 @@ aside .form {
   flex-flow: row wrap;
 }
 
-.contact-section .content-wrapper {
-
-}
-
-.general-contact {
-
-}
-
-.facilitator-contact {
-
-}
-
-.contact-section address {
-
+.contact-content p {
+  margin: 0;
 }
 
 
@@ -362,9 +290,17 @@ aside .form {
   flex-flow: row wrap;
 }
 
-.question-content {
-
+.faq h2 {
+  margin-bottom: 40px;
 }
+
+.faq-content {
+  margin-bottom: 50px;
+}
+
+
+
+
 
 
 
